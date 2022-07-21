@@ -5,7 +5,7 @@ resource "aws_instance" "test2" {
   
 
   tags = {
-    Name = "puneetmddon2"
+    Name = "puneetmddon4"
   }
   
 }
