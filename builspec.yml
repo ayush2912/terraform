@@ -11,7 +11,7 @@ phases:
       - terraform init
   build:
     commands:
-      - terraform plan 
+      - terraform $TF_COMMAND 
   post_build:
     commands:
-      - echo terraform plan completed on today
+      - echo terraform $TF_COMMAND completed on today
