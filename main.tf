@@ -12,8 +12,8 @@ resource "aws_instance" "test2" {
 
 terraform {
   backend "s3" {
-    bucket = "puneet134253452"
-    key    = "terraform/tf-state"
+    bucket = "tothetestterraform"
+    key    = "terraform/tf-state/hub"
     region = "us-west-2"
   }
 }
