@@ -9,3 +9,11 @@ resource "aws_instance" "test2" {
   }
   
 }
+
+terraform {
+  backend "s3" {
+    bucket = "tothetestterraform"
+    key    = "terraform/tf-state"
+    region = "us-west-2"
+  }
+}
