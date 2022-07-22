@@ -15,5 +15,6 @@ terraform {
     bucket = "tothetestterraform"
     key    = "terraform/tf-state/hub"
     region = "us-west-2"
+    dynamodb_table = "puneet4"
   }
 }
