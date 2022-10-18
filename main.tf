@@ -1,31 +1,31 @@
 
 
-terraform {
+/*terraform {
   backend "s3" {
     bucket = "tothetestterraform"
     key    = "terraform/tf-state/hub"
     region = "us-west-2"
     dynamodb_table = "puneet4"
   }
-}
+}*/
 
 
 
 
-/*resource "aws_instance" "test15" {
+resource "aws_instance" "test15" {
   ami           = "ami-0d70546e43a941d70"
   instance_type = "t2.micro"
-  key_name="test2"
+  
   
 
   tags = {
     Name = "puneetmddon8"
   }
   
-}*/
+}
 
 
-resource "aws_iam_role" "lambda-ec2-full-accesss" {
+/*resource "aws_iam_role" "lambda-ec2-full-accesss" {
     
     assume_role_policy    = jsonencode(
         {
@@ -86,7 +86,7 @@ resource "aws_lambda_function" "test_lambda" {
       foo = "bar"
     }
   }
-}
+}*/
 
 /*resource "aws_instance" "test15" {
   ami           = "ami-0d70546e43a941d70"
